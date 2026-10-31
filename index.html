@@ -3,90 +3,102 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Comptoir | Restaurant & Traiteur Conakry</title>
+  <title>Le Comptoir Conakry | Restaurant & Traiteur</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <script>
-    tailwind.config = { theme: { extend: { colors: { navy: '#0f172a', teal: '#0d9488', cream: '#f8fafc' }, fontFamily: { sans: ['Inter', 'system-ui', 'sans-serif'] } } } }
-  </script>
-  <style>.lang-en{display:none}.active-lang-en .lang-fr{display:none}.active-lang-en .lang-en{display:block}</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .lang-en { display: none; }
+    body.en .lang-fr { display: none; }
+    body.en .lang-en { display: block; }
+  </style>
 </head>
-<body class="bg-cream text-navy font-sans">
-  <div class="bg-amber-50 border-b text-center py-2 text-sm text-amber-800">
-    <span class="lang-fr">Maquette gratuite par Al-Falah Marketing — rien n’est en ligne sous votre nom.</span>
+<body class="bg-slate-50 text-slate-800">
+  <div class="bg-amber-50 border-b border-amber-200 text-center py-2 px-4 text-sm text-amber-900">
+    <span class="lang-fr">Maquette gratuite par Al-Falah Marketing — rien n'est en ligne sous votre nom.</span>
     <span class="lang-en">Complimentary mockup by Al-Falah Marketing — nothing is live under your name.</span>
   </div>
   <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <div class="text-2xl font-bold">LE COMPTOIR</div>
+    <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="font-bold text-xl text-slate-900">Le Comptoir</div>
       <div class="flex items-center gap-3">
-        <button onclick="document.body.classList.toggle('active-lang-en')" class="text-xs border px-2 py-1 rounded">FR/EN</button>
-        <a href="https://wa.me/224623578787" class="bg-teal text-white px-4 py-2 rounded-xl text-sm font-semibold">WhatsApp</a>
+        <button onclick="document.body.classList.toggle('en')" class="text-sm px-3 py-1 rounded-full border">FR / EN</button>
+        <a href="https://wa.me/224623578787" class="bg-teal-600 text-white px-4 py-2 rounded-full text-sm font-medium">WhatsApp</a>
       </div>
     </div>
   </header>
-  <section class="relative h-[70vh] min-h-[480px] flex items-end">
-    <img src="https://media-cdn.tripadvisor.com/media/photo-o/16/ec/41/04/sis-en-face-de-la-cite.jpg" class="absolute inset-0 w-full h-full object-cover" alt="Façade Le Comptoir Conakry">
-    <div class="absolute inset-0 bg-gradient-to-t from-navy/80"></div>
-    <div class="relative z-10 max-w-6xl mx-auto px-4 pb-12 text-white">
-      <h1 class="text-4xl md:text-6xl font-extrabold">Restaurant & Traiteur</h1>
-      <p class="mt-3 text-xl max-w-xl lang-fr">Cuisine 100% maison, produits frais et locaux. Sur place et à emporter. Face Cité Chemin de Fer, Kaloum.</p>
-      <p class="mt-3 text-xl max-w-xl lang-en">100% homemade cuisine, fresh local products. Dine-in & takeaway. Opposite Cité Chemin de Fer, Kaloum.</p>
-      <div class="mt-6 flex gap-3 flex-wrap">
-        <a href="https://wa.me/224623578787?text=Bonjour%20Le%20Comptoir%2C%20je%20souhaite%20commander%20ou%20r%C3%A9server" class="bg-teal text-white px-6 py-3 rounded-xl font-semibold">Commander / Réserver</a>
-        <a href="tel:+224623578787" class="border border-white/40 px-6 py-3 rounded-xl">Appeler</a>
+  <section class="relative h-[70vh] min-h-[480px] bg-cover bg-center" style="background-image: linear-gradient(rgba(15,23,42,0.55), rgba(15,23,42,0.55)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80');">
+    <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 lang-fr">Cuisine 100% Maison</h1>
+      <h1 class="text-4xl md:text-5xl font-bold mb-4 lang-en">100% Homemade Cuisine</h1>
+      <p class="text-lg md:text-xl max-w-2xl mb-6 lang-fr">Restaurant & Traiteur · Produits frais et locaux · Sur place et à emporter</p>
+      <p class="text-lg md:text-xl max-w-2xl mb-6 lang-en">Restaurant & Catering · Fresh local products · Dine-in & Takeaway</p>
+      <div class="flex gap-4 flex-wrap justify-center">
+        <a href="https://wa.me/224623578787" class="bg-teal-500 hover:bg-teal-600 px-6 py-3 rounded-full font-medium">Commander / Book</a>
+        <a href="tel:+224623578787" class="bg-white/20 backdrop-blur px-6 py-3 rounded-full font-medium">Appeler</a>
       </div>
     </div>
   </section>
-  <div class="bg-navy text-white text-center py-3 text-sm">Laurel, MD · Coyah, Guinée · Freetown, Sierra Leone — Al-Falah Marketing</div>
-  <section class="py-16 px-4 max-w-6xl mx-auto">
-    <h2 class="text-3xl font-bold text-center mb-10">Services</h2>
-    <div class="grid md:grid-cols-3 gap-6">
-      <div class="bg-white rounded-2xl shadow overflow-hidden">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Du_riz_gras_%C3%A0_la_guineenne.JPG" class="h-48 object-cover w-full" alt="Riz gras guinéen">
-        <div class="p-5"><h3 class="font-bold">Plats du jour</h3><p class="text-sm text-slate-600 mt-1 lang-fr">Inspirations africaines et européennes, produits frais locaux.</p><p class="text-sm text-slate-600 mt-1 lang-en">African & European daily specials, fresh local products.</p></div>
-      </div>
-      <div class="bg-white rounded-2xl shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=800&q=80" class="h-48 object-cover w-full" alt="Traiteur">
-        <div class="p-5"><h3 class="font-bold">Traiteur</h3><p class="text-sm text-slate-600 mt-1 lang-fr">Événements, entreprises, célébrations sur mesure.</p><p class="text-sm text-slate-600 mt-1 lang-en">Events, corporate, custom catering.</p></div>
-      </div>
-      <div class="bg-white rounded-2xl shadow overflow-hidden">
-        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=800&q=80" class="h-48 object-cover w-full" alt="À emporter">
-        <div class="p-5"><h3 class="font-bold">À emporter</h3><p class="text-sm text-slate-600 mt-1">Kaloum — Face Cité Chemin de Fer.</p></div>
-      </div>
+  <div class="bg-slate-900 text-white py-4">
+    <div class="max-w-6xl mx-auto px-4 text-center text-sm space-y-1">
+      <p>📍 En Face de la Cité Chemin de Fer, Kaloum, Conakry</p>
+      <p>📞 +224 623 57 87 87 · 📧 lecomptoir.restotraiteur@gmail.com</p>
     </div>
-  </section>
-  <section class="py-16 bg-white">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-10">Galerie / Ambiance</h2>
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-        <img src="https://media-cdn.tripadvisor.com/media/photo-o/16/ec/41/04/sis-en-face-de-la-cite.jpg" class="rounded-xl h-48 object-cover" alt="Façade">
-        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" class="rounded-xl h-48 object-cover" alt="Intérieur">
-        <img src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?auto=format&fit=crop&w=600&q=80" class="rounded-xl h-48 object-cover" alt="Cuisine">
-        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" class="rounded-xl h-48 object-cover" alt="Salle">
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="py-16 px-4 max-w-2xl mx-auto text-center">
-    <h2 class="text-3xl font-bold mb-6">Contact</h2>
-    <div class="bg-white rounded-2xl p-6 shadow">
-      <p class="font-semibold text-lg">Le Comptoir Conakry</p>
-      <p>En face de la Cité Chemin de Fer, Kaloum, Conakry</p>
-      <p class="mt-2"><a href="tel:+224623578787" class="text-teal font-medium">+224 623 57 87 87</a> · +224 629 22 22 12 · +224 655 03 04 03</p>
-      <p class="mt-1"><a href="mailto:lecomptoir.restotraiteur@gmail.com" class="text-teal">lecomptoir.restotraiteur@gmail.com</a></p>
-      <a href="https://wa.me/224623578787?text=Bonjour%20Le%20Comptoir%2C%20je%20souhaite%20plus%20d%27informations" class="mt-4 inline-block bg-teal text-white px-6 py-3 rounded-xl">WhatsApp</a>
-    </div>
-  </section>
-  <footer class="bg-navy text-slate-300 py-10 text-sm text-center">
-    <p class="text-white font-semibold">Al-Falah Marketing</p>
-    <p>8468 Winding Trail, Laurel, MD 20724 · Coyah · Freetown</p>
-    <p>+1 240 280 6137 · +224 611 351 302 · info@al-falahmarketing.com</p>
-    <p class="mt-4 text-xs">Maquette de présentation uniquement. Photo de façade réelle (Tripadvisor). Autres images soigneusement sélectionnées — remplacez-les par vos propres clichés.</p>
-  </footer>
-  <div class="fixed bottom-0 left-0 right-0 bg-white border-t md:hidden flex justify-around py-2 text-xs font-medium">
-    <a href="tel:+224623578787">Appeler</a>
-    <a href="https://wa.me/224623578787" class="font-semibold text-teal">WhatsApp</a>
-    <a href="#contact">Contact</a>
   </div>
+  <section class="max-w-6xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-bold text-center mb-10 lang-fr">Nos Spécialités</h2>
+    <h2 class="text-3xl font-bold text-center mb-10 lang-en">Our Specialties</h2>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Plat" class="h-48 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-lg mb-2 lang-fr">Plats du Jour</h3>
+          <h3 class="font-semibold text-lg mb-2 lang-en">Daily Plates</h3>
+          <p class="text-sm text-slate-600 lang-fr">Cuisine africaine et européenne avec produits frais locaux.</p>
+          <p class="text-sm text-slate-600 lang-en">African & European cuisine with fresh local products.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Traiteur" class="h-48 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-lg mb-2">Traiteur</h3>
+          <p class="text-sm text-slate-600 lang-fr">Événements, livraisons et commandes sur mesure.</p>
+          <p class="text-sm text-slate-600 lang-en">Events, deliveries and custom orders.</p>
+        </div>
+      </div>
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=600&q=80" alt="Ambiance" class="h-48 w-full object-cover">
+        <div class="p-5">
+          <h3 class="font-semibold text-lg mb-2 lang-fr">Ambiance</h3>
+          <h3 class="font-semibold text-lg mb-2 lang-en">Atmosphere</h3>
+          <p class="text-sm text-slate-600 lang-fr">Accueil chaleureux, service rapide, cadre moderne.</p>
+          <p class="text-sm text-slate-600 lang-en">Warm welcome, fast service, modern setting.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-3xl font-bold text-center mb-10">Galerie</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover w-full" alt="">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover w-full" alt="">
+        <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover w-full" alt="">
+        <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=400&q=80" class="rounded-xl h-40 object-cover w-full" alt="">
+      </div>
+    </div>
+  </section>
+  <section class="bg-teal-600 text-white py-16 text-center">
+    <h2 class="text-3xl font-bold mb-4 lang-fr">Réservez ou Commandez</h2>
+    <h2 class="text-3xl font-bold mb-4 lang-en">Reserve or Order</h2>
+    <a href="https://wa.me/224623578787?text=Bonjour%20Le%20Comptoir%2C%20je%20souhaite%20commander%20ou%20r%C3%A9server." class="inline-block bg-white text-teal-700 px-8 py-3 rounded-full font-semibold mt-4">WhatsApp</a>
+  </section>
+  <footer class="bg-slate-900 text-slate-300 py-10 text-sm">
+    <div class="max-w-6xl mx-auto px-4 text-center space-y-3">
+      <p class="font-medium text-white">Le Comptoir Conakry</p>
+      <p>Maquette de démonstration · Demo mockup</p>
+      <p class="text-xs opacity-70">Créé par Al-Falah Marketing · al-falahmarketing.com · info@al-falahmarketing.com · +1 240 280 6137 · Laurel, MD / Guinea</p>
+      <p class="text-xs">© 2026 · Pour revue uniquement · For review only</p>
+    </div>
+  </footer>
 </body>
 </html>
